@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoodieHub - Online Food Ordering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="logo">
+            <h2>FoodieHub</h2>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="cart.html">
+                <i class="fa fa-shopping-cart"></i> Cart
+            </a>
+            <a href="login.html">Login</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <h1>Order Your Favorite Food Online 🍔🍕</h1>
+        <p>Fast delivery | Fresh food | Best prices</p>
+    </section>
+
+    <!-- ================= SEARCH SECTION ================= -->
+    <section class="search-section">
+        <input type="text" id="searchInput" placeholder="Search food item..." onkeyup="searchFood()">
+    </section>
+
+    <!-- ================= MENU SECTION ================= -->
+    <section class="menu-section">
+        <h2 class="section-title">Popular Dishes</h2>
+
+        <div class="menu-container" id="menuContainer">
+            <!-- Food Cards will be inserted by JavaScript -->
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <p>© 2026 FoodieHub | Online Food Ordering Website</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="script.js"></script>
+
+</body>
+</html>

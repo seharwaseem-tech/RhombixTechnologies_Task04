@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - FoodieHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <h2>FoodieHub Admin</h2>
+    </div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="admin-dashboard">
+
+    <h2 class="section-title">Admin Dashboard</h2>
+
+    <!-- SUMMARY CARDS -->
+    <div class="admin-cards">
+        <div class="admin-card">
+            <h3>Total Products</h3>
+            <p id="totalProducts">0</p>
+        </div>
+
+        <div class="admin-card">
+            <h3>Total Orders</h3>
+            <p id="totalOrders">0</p>
+        </div>
+    </div>
+
+    <!-- ADD PRODUCT -->
+    <div class="admin-box">
+        <h3>Add New Product</h3>
+
+        <input type="text" id="adminName" placeholder="Product Name">
+        <input type="number" id="adminPrice" placeholder="Price">
+        <input type="text" id="adminImage" placeholder="Image Path (images/item.png)">
+        <button onclick="adminAddProduct()">Add Product</button>
+    </div>
+
+    <!-- PRODUCT LIST -->
+    <div class="admin-box">
+        <h3>All Products</h3>
+        <div id="adminProductList"></div>
+    </div>
+
+    <!-- ORDERS LIST -->
+    <div class="admin-box">
+        <h3>Orders</h3>
+        <div id="adminOrders"></div>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <p>© 2026 FoodieHub | Admin Panel</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

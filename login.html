@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - FoodieHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="logo">
+            <h2>FoodieHub</h2>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="cart.html">
+                <i class="fa fa-shopping-cart"></i> Cart
+            </a>
+            <a href="login.html">Login</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <!-- ================= LOGIN SECTION ================= -->
+    <section class="login-section">
+        <div class="login-container">
+
+            <h2>Login to Your Account</h2>
+            <p class="login-subtitle">Welcome back! Please enter your details.</p>
+
+            <form id="loginForm">
+
+                <!-- Email -->
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Password -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <!-- Login Button -->
+                <button type="submit" class="login-btn">
+                    <i class="fa fa-sign-in-alt"></i> Login
+                </button>
+
+                <!-- Extra Links -->
+                <div class="extra-links">
+                    <p>Don't have an account? <a href="#">Sign Up</a></p>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <p>© 2026 FoodieHub | Online Food Ordering Website</p>
+    </footer>
+
+</body>
+</html>
